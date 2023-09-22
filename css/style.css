@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg-first{
+    background-color: #0F172A;
+}
+
+.bg-second{
+    background-color: #33415580;
+}
+
+.bg-third{
+    background-color: #38BDF8;
+}
+.bg-fourth{
+    background-color: #94a3b8;
+}
+
+
+.txt-first{
+    color: #0F172A;
+}
+
+.txt-second{
+    color: #33415580;
+}
+
+.txt-third{
+    color: #38BDF8;
+}
+.txt-fourth{
+    color: #94a3b8;
+}
+
+body{
+    background-color: #0F172A;
+}
+
+header{
+    width: 100%;
+    z-index: 10000000000;
+}
+
+.cus-nav-link:hover{
+    color: #fff;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.banner-img-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.banner-img{
+    width: 100%;
+    height: 100%;
+    background-image: url('../asset/portfolio_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner-img::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.banner-content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    z-index: 100;
+}
+
+.profile-photo-container{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #33415580;
+}
