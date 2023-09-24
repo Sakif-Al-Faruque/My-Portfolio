@@ -37,6 +37,64 @@ body{
     background-color: #0F172A;
 }
 
+
+.section-header{
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+    text-transform: uppercase;
+    height: 150px;
+    margin-bottom: 40px;
+}
+.section-header > .section-header-inner-text{
+    position: absolute;
+    display: inline-block;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.03);
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 1rem;
+    
+}
+.section-header > .section-header-display-text{
+    position: absolute;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #38BDF8;
+    z-index: 20;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.section-header > span.bottom-bar{
+    background-color: #38BDF8;
+    height: 4px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section-header > span.bottom-bar-outer{
+    background-color: rgba(255, 255, 255, 0.05);
+    height: 4px;
+    width: 250px;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+
+
 header{
     width: 100%;
     z-index: 10000000000;
@@ -89,4 +147,30 @@ header{
     overflow: hidden;
     border-radius: 50%;
     border: 10px solid #33415580;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.skill-item{
+    box-sizing: border-box;
+    padding: 20px;
+/*     background-color: red; */
+}
+.skill-item > .skill-item-header{
+    color: #8b5cf6;
+    width: 100%;
+    border-bottom: 2px solid #33415580;
+    padding-bottom: 3px;
+}
+.skill-item > .skill-item-field{
+    width: 100%;
 }
