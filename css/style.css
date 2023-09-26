@@ -164,13 +164,95 @@ header{
     box-sizing: border-box;
     padding: 20px;
 /*     background-color: red; */
+    margin-bottom: 20px;
 }
 .skill-item > .skill-item-header{
     color: #8b5cf6;
     width: 100%;
     border-bottom: 2px solid #33415580;
     padding-bottom: 3px;
+    font-size: 1.5rem;
 }
 .skill-item > .skill-item-field{
     width: 100%;
+}
+.skill-item > .skill-item-field > .sub-skill{
+    position: relative;
+    width: 100%;
+    display: block;
+    color: #fff;
+    margin: 20px 0;
+    height: 40px;
+}
+.skill-item > .skill-item-field > .sub-skill > .skill-subject{
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    text-transform: uppercase;
+}
+.skill-item > .skill-item-field > .sub-skill > .skill-percentage{
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    font-size: .8rem;
+}
+.skill-item > .skill-item-field > .sub-skill > .skill-progress-bar-indicator{
+    position: absolute;
+    display: block;
+    height: 3px;
+    background-color: #38BDF8;
+    bottom: 0;
+    z-index: 10;
+}
+.skill-item > .skill-item-field > .sub-skill > .skill-progress-bar-limit{
+    position: absolute;
+    display: block;
+    height: 3px;
+    background-color: #33415580;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+.exp-container, .edu-container{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    position: relative;
+}
+
+.exp-container > .exp-container-side-bar{
+    width: 5px;
+    height: 100%;
+    background-color: #33415580;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.exp-container > .exp-item{
+    position: relative;
+    margin-bottom: 20px;
+}
+.exp-container > .exp-item::before{
+    display: block;
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #334155;
+    top: 5px;
+    left: -30px;
+}
+.exp-container > .exp-item:hover::before{
+    background-color: #38BDF8;
 }
