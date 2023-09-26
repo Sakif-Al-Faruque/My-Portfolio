@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .bg-first{
     background-color: #0F172A;
@@ -15,6 +16,9 @@
 }
 .bg-fourth{
     background-color: #94a3b8;
+}
+.bg-fifth{
+    background-color: #8b5cf6;
 }
 
 
@@ -31,6 +35,9 @@
 }
 .txt-fourth{
     color: #94a3b8;
+}
+.txt-fifth{
+    color: #8b5cf6;
 }
 
 body{
@@ -56,7 +63,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     letter-spacing: 1rem;
-    
+    text-align: center;
 }
 .section-header > .section-header-display-text{
     position: absolute;
@@ -250,9 +257,90 @@ header{
     width: 15px;
     border-radius: 50%;
     background-color: #334155;
-    top: 5px;
+    top: 15px;
     left: -30px;
 }
 .exp-container > .exp-item:hover::before{
     background-color: #38BDF8;
+}
+.exp-container > .exp-item > span{
+    display: block;
+}
+.exp-container > .exp-item > span:nth-child(1){
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #33415580;
+}
+.exp-container > .exp-item:hover > span:nth-child(1){
+    color: #fff;
+}
+.exp-container > .exp-item > span:nth-child(2){
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #8b5cf6;
+}
+.exp-container > .exp-item > span:nth-child(3){
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #33415580;
+}
+.exp-container > .exp-item:hover > span:nth-child(3){
+    color: #fff;
+}
+
+
+
+
+.my-work{
+    width: 100%;
+}
+ul.work-list{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+ul.work-list > li{
+    padding: 5px 25px;
+    border: 2px solid #fff;
+    border-radius: 45px;
+}
+ul.work-list > li > a{
+    color: #fff;
+    text-transform: capitalize;
+}
+.work-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.work-container > .work-item{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto 20px auto;
+    background-color: red;
+}
+
+
+.thanks-texter{
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #38BDF8;
+  text-shadow:
+    0 0 5px #38BDF8,
+    0 0 10px #38BDF8,
+    0 0 20px #38BDF8,
+    0 0 40px #8b5cf6,
+/*     0 0 80px #8b5cf6,
+    0 0 90px #8b5cf6,
+    0 0 100px #8b5cf6, */
+    0 0 150px #8b5cf6;
 }
