@@ -1,3 +1,5 @@
+var mixitup = require('mixitup');
+
 $(document).ready(function(){
     $('.banner-img').ripples({
         resolution: 500,
@@ -17,5 +19,8 @@ var typed = new Typed('#interests', {
     cursorChar: '|',
     autoInsertCss: true,
   });
+
+
+  var mixer = mixitup('.container');
 
     
