@@ -1,5 +1,3 @@
-var mixitup = require('mixitup');
-
 $(document).ready(function(){
     $('.banner-img').ripples({
         resolution: 500,
@@ -21,6 +19,12 @@ var typed = new Typed('#interests', {
   });
 
 
-  var mixer = mixitup('.container');
+  var containerEl = document.querySelector('[data-ref~="mixitup-container"]');
+
+  var mixer = mixitup(containerEl, {
+      selectors: {
+          target: '[data-ref~="mixitup-target"]'
+      }
+  });
 
     
