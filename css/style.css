@@ -95,8 +95,21 @@ body{
     left: 50%;
     transform: translateX(-50%);
 }
+/* Cursor */
+.typed-cursor {
+    color: #38BDF8;
+}
 
+/* If fade out option is set */
+.typed-fade-out {
+}
 
+#interests{
+    display: inline-block;
+    width: 200px;
+    color: #8b5cf6;
+    text-align: left;
+}
 
 
 
@@ -141,8 +154,8 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 200px;
-    width: 300px;
+    height: 220px;
+    width: 400px;
     position: absolute;
     z-index: 100;
 }
@@ -328,13 +341,21 @@ ul.work-list > li > a{
 }
 
 
+
+
+
+
+
+.thanks{
+    width: 100%;
+}
 .thanks-texter{
     text-align: center;
     width: 100%;
     font-size: 3rem;
     text-transform: uppercase;
     color: #38BDF8;
-  text-shadow:
+    text-shadow:
     0 0 5px #38BDF8,
     0 0 10px #38BDF8,
     0 0 20px #38BDF8,
@@ -344,3 +365,5 @@ ul.work-list > li > a{
     0 0 100px #8b5cf6, */
     0 0 150px #8b5cf6;
 }
+
+
