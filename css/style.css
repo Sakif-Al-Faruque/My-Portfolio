@@ -322,27 +322,31 @@ ul.work-list > li{
     border: 2px solid #fff;
     border-radius: 45px;
 }
-ul.work-list > li > a{
+ul.work-list > li:hover{
+    border: 2px solid #8b5cf6;
+    background-color: #fff;
+}
+ul.work-list > li > button{
     color: #fff;
     text-transform: capitalize;
+    background-color: transparent;
+    border: none;
+}
+ul.work-list > li:hover > button{
+    color: #8b5cf6;
 }
 .work-container{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 700px;
 }
 .work-container > .work-item{
-    height: 200px;
-    width: 200px;
-    margin: 0 auto 20px auto;
-    background-color: red;
+    height: 100%;
+    width: 100%;
 }
-
-
-
-
 
 
 

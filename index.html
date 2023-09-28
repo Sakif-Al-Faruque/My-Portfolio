@@ -269,24 +269,30 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <ul class="work-list">
-              <li><a href="#">testing</a></li>
-              <li><a href="#">testing</a></li>
-              <li><a href="#">testing</a></li>
-              <li><a href="#">testing</a></li>
+            <ul class="work-list controls">
+              <li><button type="button" class="control" data-filter="all">All</button></li>
+              <li><button type="button" class="control" data-filter=".dev">dev</button></li>
+              <li><button type="button" class="control" data-filter=".test">test</button></li>
+              <li><button type="button" class="control" data-filter=".pen">pen</button></li>
+              <li><button type="button" class="control" data-filter="none">None</button></li>
             </ul>
           </div>
         </div>
         <div class="row my-5">
           <div class="col-lg-12">
-            <div class="work-container">
-              <div class="work-item"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
-              <div class="work-item"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
-              <div class="work-item"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
-              <div class="work-item"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
-              <div class="work-item"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
-              <div class="work-item"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
-              <div class="work-item"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+            <div class="work-container container" data-ref="mixitup-container">
+              <div class="work-item item dev" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item test" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item test" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item dev" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item pen" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item dev" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item pen" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item pen" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item pen" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item pen" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item pen" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
+              <div class="work-item item pen" data-ref="mixitup-target"><img src="asset/pro.jpg" alt="project" width="100%" height="100%"></div>
             </div>
           </div>
         </div>
@@ -346,35 +352,13 @@
 
 
     <section class="thanks my-5">
-      <div class="thanks-texter">thanks for watching</div>
+      <div class="thanks-texter">thanks for visiting</div>
     </section>
 
 
-    <div class="controls">
-      <button type="button" class="control" data-filter="all">All</button>
-      <button type="button" class="control" data-filter=".dev">dev</button>
-      <button type="button" class="control" data-filter=".test">test</button>
-      <button type="button" class="control" data-filter=".pen">pen</button>
-      <button type="button" class="control" data-filter="none">None</button>
+    
 
-      <button type="button" class="control" data-sort="default:asc">Asc</button>
-      <button type="button" class="control" data-sort="default:desc">Desc</button>
-  </div>
-
-  <div class="container" data-ref="mixitup-container">
-    <div class="item dev" data-ref="mixitup-target">dev1</div>
-    <div class="item test" data-ref="mixitup-target">test1</div>
-    <div class="item pen" data-ref="mixitup-target">pen1</div>
-    <div class="item pen" data-ref="mixitup-target">pen2</div>
-    <div class="item pen" data-ref="mixitup-target">pen3</div>
-    <div class="item dev" data-ref="mixitup-target">dev2</div>
-    <div class="item dev" data-ref="mixitup-target">dev3</div>
-    <div class="item pen" data-ref="mixitup-target">pen4</div>
-
-    <div class="gap"></div>
-    <div class="gap"></div>
-    <div class="gap"></div>
-</div>
+  
 
     <script src="js/jquery-1.12.4.min.js"></script>
     <script src="js/mixitup.min.js"></script>
