@@ -368,6 +368,8 @@ ul.work-list > li:hover > button{
     0 0 90px #8b5cf6,
     0 0 100px #8b5cf6, */
     0 0 150px #8b5cf6;
+    margin: 0 10px;
+    display: inline-block;
 }
 
 
