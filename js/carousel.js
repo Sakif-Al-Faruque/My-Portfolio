@@ -1,2 +1,2 @@
-var copy = document.querySelector(".thanks-texter").cloneNode(true);
-document.querySelector(".carousel-slide").appendChild(copy);
+/* var copy = document.querySelector(".thanks-texter").cloneNode(true);
+document.querySelector(".carousel-slide").appendChild(copy); */

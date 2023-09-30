@@ -15,5 +15,5 @@
     position: relative;
   }  
   .carousel-slide {
-    animation: 15s slide infinite linear;
+    animation: 5s slide infinite linear;
   }
