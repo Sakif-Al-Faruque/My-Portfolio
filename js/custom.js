@@ -1,3 +1,14 @@
+document.addEventListener('scroll', () => {
+    const nav = document.querySelector('header');
+
+    if(window.scrollY > 0){
+        nav.classList.add('nav-scrolled');
+    }else{
+        nav.classList.remove('nav-scrolled');
+    }
+});
+
+
 $(document).ready(function(){
     $('.banner-img').ripples({
         resolution: 500,
@@ -20,7 +31,6 @@ var typed = new Typed('#interests', {
 
 
   var containerEl = document.querySelector('[data-ref~="mixitup-container"]');
-
   var mixer = mixitup(containerEl, {
       selectors: {
           target: '[data-ref~="mixitup-target"]'
