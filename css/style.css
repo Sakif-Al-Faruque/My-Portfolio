@@ -350,6 +350,62 @@ ul.work-list > li:hover > button{
 
 
 
+.contact p:nth-child(2){
+    color: #fff;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.contact-details-container{
+    width: 100%;
+    margin-top: 40px;
+    position: relative;
+}
+.contact-details-container > img{
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    opacity: .8;
+}
+
+.contact-details-container > .contact-detail-item{
+    margin: 20px 0;
+    position: relative;
+    color: #fff;
+    padding-left: 30px;
+    font-size: 1rem;
+    
+}
+.contact-details-container > .contact-detail-item > .contact-logo{
+    position: absolute;
+    left: 0;
+    color: #8b5cf6;
+}
+.contact-details-container > .contact-detail-item > .contact-title{
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.contact-details-container > .contact-detail-item:nth-child(1) > .contact-info{
+    text-transform: capitalize;
+}
+.contact-details-container > .contact-detail-item:nth-child(1) > .contact-info > span{
+    display: block;
+}
+.contact p:nth-child(4){
+    color: #38BDF8;
+    text-align: left;
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
 .thanks{
     width: 100%;
 }
@@ -370,6 +426,49 @@ ul.work-list > li:hover > button{
     0 0 150px #8b5cf6;
     margin: 0 10px;
     display: inline-block;
+}
+
+
+
+
+footer{
+    padding: 30px 0;
+}
+
+
+footer p{
+    color: #fff;
+    text-align: left;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.social-icon-container{
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.social-icon-container > .social-icon{
+    margin-left: 30px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.social-icon-container > .social-icon:hover{
+    background-color: #38BDF8;
+}
+
+.social-icon-container > .social-icon:nth-child(2){
+    padding: 10px 20px;
+}
+.social-icon-container > .social-icon > a{
+    font-size: 1.5rem;
+    color: #8b5cf6;
+}
+.social-icon-container > .social-icon:hover > a{
+    color: #fff;
 }
 
 
