@@ -18,7 +18,7 @@ $(document).ready(function(){
 });
 
 var typed = new Typed('#interests', {
-    strings: ['Web development', 'ui/ux design', 'testing', 'cyber security', 'artificial intelligence'],
+    strings: ['Software Dev', 'Software Testing', 'Software Security'],
     typeSpeed: 150,
     smartBackspace: true,
     shuffle: false,
