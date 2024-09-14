@@ -174,3 +174,15 @@ ul.dashboard-tab-bar > li > .dashboard-btn{
     left: 55%;
     transform: translate(-50%, -50%);
 }
+.dashboard-bar{
+    height: 100%;
+    width: 100%;
+    background: red;
+}
+
+.dashboard-bar-active{
+    display: block;
+}
+.dashboard-bar-deactive{
+    display: none;
+}
