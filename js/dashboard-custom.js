@@ -79,8 +79,8 @@ console.log("hello")
         dashboardButton02.classList.remove("dashboard-btn-active");
         dashboardButton02.classList.add("dashboard-btn-deactive");
         
-        dashboardButton02.classList.remove("dashboard-bar-active");
-        dashboardButton02.classList.add("dashboard-bar-deactive");
+        dashboardBar02.classList.remove("dashboard-bar-active");
+        dashboardBar02.classList.add("dashboard-bar-deactive");
     }
     
     dashboardButton03.classList.remove("dashboard-btn-deactive");

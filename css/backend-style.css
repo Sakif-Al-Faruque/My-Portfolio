@@ -169,7 +169,7 @@ ul.dashboard-tab-bar > li > .dashboard-btn{
     position: absolute;
     height: 500px;
     width: 1000px;
-    background-color: green;
+    /* background-color: green; */
     top: 50%;
     left: 55%;
     transform: translate(-50%, -50%);
@@ -177,7 +177,20 @@ ul.dashboard-tab-bar > li > .dashboard-btn{
 .dashboard-bar{
     height: 100%;
     width: 100%;
-    background: red;
+    background: transparent;
+    backdrop-filter: 25px;
+    box-sizing: border-box;
+    box-shadow: 0 0 100px 2px #000;
+    color: #94a3b8;
+    border-radius: 5px;
+}
+.dashboard-bar > h3{
+    text-align: center;
+    padding: 15px 0;
+}
+
+.dashboard-bar > form{
+    padding: 0px 20px;
 }
 
 .dashboard-bar-active{
