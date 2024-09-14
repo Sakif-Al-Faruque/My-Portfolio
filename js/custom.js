@@ -37,4 +37,9 @@ var typed = new Typed('#interests', {
       }
   });
 
+
+
+
+ 
+
     
