@@ -34,14 +34,6 @@ console.log("hello")
 
 
 
-
-
-
-
-
-
-
-
  dashboardButton02.addEventListener("click", ()=>{
     if(dashboardButton01.classList.contains("dashboard-btn-active") || dashboardBar01.classList.contains("dashboard-bar-active")){
         dashboardButton01.classList.remove("dashboard-btn-active");
@@ -90,4 +82,34 @@ console.log("hello")
     dashboardBar03.classList.add("dashboard-bar-active");
 
     console.log(dashboardBar03.classList.value);
+  });
+
+
+
+
+
+  //message - dashboard
+  let previewer = document.getElementById("dashboard-msg-previewer");
+  let previewerExit = document.getElementById("previewer-exit");
+  let msgRows = document.querySelectorAll(".msg-row");
+
+  previewerExit.addEventListener("click", ()=>{
+    previewer.classList.remove("dashboard-msg-previewer-active");
+    previewer.classList.add("dashboard-msg-previewer-deactive");
+  });
+
+  msgRows.forEach(row => {
+    row.addEventListener("click", ()=>{
+        /* console.log(row); */
+        if(previewer.classList.contains("dashboard-msg-previewer-deactive")){
+            previewer.classList.remove("dashboard-msg-previewer-deactive");
+            previewer.classList.add("dashboard-msg-previewer-active");
+        }
+        document.getElementById("sl-val").innerText = row.children[0].textContent;
+        document.getElementById("nm-val").innerText = row.children[1].textContent;
+        document.getElementById("mail-val").innerText = row.children[2].textContent;
+        document.getElementById("sub-val").innerText = row.children[3].textContent;
+        document.getElementById("msg-val").innerText = row.children[4].textContent;
+        /* console.log(); */
+    })
   });

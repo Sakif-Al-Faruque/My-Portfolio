@@ -15,6 +15,14 @@
 </head>
 <body>
     <div class="dashboard-body">
+        <div class="dashboard-msg-previewer-deactive" id="dashboard-msg-previewer">
+            <button id="previewer-exit">x</button>
+            <div class="SL-sec"><span>sl: </span><span id="sl-val"></span></div>
+            <div class="nm-sec"><span>name: </span><span id="nm-val"></span></div>
+            <div class="mail-sec"><span>email: </span><span id="mail-val"></span></div>
+            <div class="sub-sec"><span>subject: </span><span id="sub-val"></span></div>
+            <div class="msg-sec"><span>message: </span><span id="msg-val"></span></div>
+        </div>
         <div class="dashboard-left-portion">
             <div class="icon-box">
                 <img src="../asset/portfolio_logo.png" alt="" height="100%" width="100%">
@@ -32,8 +40,11 @@
                 <div class="dashboard-content-box">
                     <div class="dashboard-bar dashboard-bar-deactive" id="dashboard-bar-01">
                         <h3>My Work</h3>
-                        <form class="">
-                            
+                        <form class="project-form">
+                            <input placeholder="title" class="project-form-inp" type="title">
+                            <input placeholder="link" class="project-form-inp" type="link">
+                            <div class="project-form-file-handler"><span>thumbnail</span><input type="file"></div>
+                            <button class="project-form-btn">save</button>
                         </form>
                     </div>
                     <div class="dashboard-bar dashboard-bar-deactive" id="dashboard-bar-02">
@@ -41,6 +52,40 @@
                     </div>
                     <div class="dashboard-bar dashboard-bar-deactive" id="dashboard-bar-03">
                         <h3>Message</h3>
+                        <table class="table msg-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>name</th>
+                                    <th>email</th>
+                                    <th>subject</th>
+                                    <th>message</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="msg-row">
+                                    <td>1</td>
+                                    <td>Lorem, ipsum.</td>
+                                    <td>Lorem, ipsum dolor.</td>
+                                    <td>Lorem ipsum dolor sit.</td>
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                </tr>
+                                <tr class="msg-row">
+                                    <td>2</td>
+                                    <td>Lorem, ipsum.2</td>
+                                    <td>Lorem, ipsum dolor.</td>
+                                    <td>Lorem ipsum dolor sit.</td>
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                </tr>
+                                <tr class="msg-row">
+                                    <td>3</td>
+                                    <td>Lorem, ipsum.3</td>
+                                    <td>Lorem, ipsum dolor.</td>
+                                    <td>Lorem ipsum dolor sit.</td>
+                                    <td>Lorem ipsum dolor sit amet.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 

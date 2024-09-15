@@ -41,6 +41,7 @@
     color: #8b5cf6;
 }
 
+/* login */
 .login-body{
     height: 100vh;
     width: 100%;
@@ -110,10 +111,28 @@
     width: 100%;
     position: relative;
 }
+#dashboard-msg-previewer{
+    height: 400px;
+    width: 700px;
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000000;
+    box-sizing: border-box;
+    padding: 15px;
+}
+.dashboard-msg-previewer-deactive{
+    display: none;
+}
+.dashboard-msg-previewer-active{
+    display: block;
+}
 .dashboard-left-portion{
     height: 100vh;
     width: 10%;
-    min-width: 192px;
+    min-width: 150px;
     background-color: #334155;
     z-index: 1000;
     position: absolute;
@@ -124,6 +143,7 @@
 .dashboard-left-portion > .icon-box{
     width: 100%;
     height: 126.75px;
+    min-height: 100px;
     margin-top: 15px;
 }
 ul.dashboard-tab-bar{
@@ -186,12 +206,12 @@ ul.dashboard-tab-bar > li > .dashboard-btn{
 }
 .dashboard-bar > h3{
     text-align: center;
-    padding: 15px 0;
+    padding: 25px 0 15px 0;
 }
 
-.dashboard-bar > form{
+/* .dashboard-bar > form{
     padding: 0px 20px;
-}
+} */
 
 .dashboard-bar-active{
     display: block;
@@ -199,3 +219,86 @@ ul.dashboard-tab-bar > li > .dashboard-btn{
 .dashboard-bar-deactive{
     display: none;
 }
+
+
+/* dashboard contents */
+#dashboard-bar-01{
+    padding: 0 10px;
+}
+.project-form{
+    padding: 0 10px;
+    margin-top: 70px;
+}
+.project-form-inp{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #94a3b8;
+    background-color: transparent;
+    color: #94a3b8;
+    border-radius: 3px;
+    margin-bottom: 30px;
+
+}
+.project-form-inp::placeholder{
+    text-transform: capitalize;
+    color: #94a3b8;
+}
+.project-form-file-handler{
+    width: 100%;
+    border: 1px solid #94a3b8;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.project-form-file-handler > span{
+    display: inline-block;
+}
+.project-form-file-handler > span{
+    color: #94a3b8;
+    text-transform: capitalize;
+    background-color: #94a3b8;
+    color: #334155;
+    padding: 10px;
+}
+.project-form-file-handler > input[type=file]{
+    display: inline-block;
+    color: #94a3b8;
+    padding: 10px 546px 10px 10px;
+    background-color: transparent;
+}
+
+.project-form-file-handler > input[type=file]::file-selector-button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: #94a3b8;
+    display: none;
+}
+.project-form-btn{
+    background-color: transparent;
+    border: 1px solid #94a3b8;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #94a3b8;
+    text-transform: capitalize;
+}
+.project-form-btn:hover{
+    background-color: #94a3b8;
+    color: #334155;
+}
+
+
+
+/* message - dashboard */
+#dashboard-bar-03{
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.msg-table{
+    width: 100% !important;
+    color: #94a3b8;
+}
+.msg-table > thead{
+    text-transform: capitalize;
+}
+
